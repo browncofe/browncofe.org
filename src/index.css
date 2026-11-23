@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme {
+  --color-paper: #f7f4ed;
+  --color-paper-card: #fcfbf7;
+  --color-paper-muted: #efeae0;
+  --color-ink: #242822;
+  --color-ink-muted: #656a5f;
+  --color-ink-subtle: #8b8f84;
+  --color-moss: #46613e;
+  --color-moss-hover: #384f31;
+  --color-moss-tint: #e8efe2;
+  --color-moss-border: #c3d2ba;
+  --color-ochre: #9c7227;
+  --color-ochre-tint: #f4ebd8;
+  --color-ochre-border: #dec79b;
+  --color-line: #e4dfd3;
+  --color-line-strong: #d3ccbc;
+  --font-serif: "Noto Serif TC", "PMingLiU", "Apple LiSung", Georgia, serif;
+  --font-sans: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+  }
+
+  h1, h2, h3, .font-editorial {
+    font-family: var(--font-serif);
+    text-wrap: balance;
+  }
+
+  button, a, select, input {
+    &:focus-visible {
+      outline: 2px solid var(--color-moss);
+      outline-offset: 2px;
+    }
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

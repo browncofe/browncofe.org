@@ -1,0 +1,6 @@
+{
+  "name": "北科大圖書館閱覽室座位預約系統",
+  "description": "北科大圖書館閱覽室座位預約系統可互動網站原型（UX 課堂展示用）",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

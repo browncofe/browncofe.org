@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>北科大圖書館座位預約</title><meta name="description" content="查詢閱覽區空位、選擇時段與座位，管理個人預約。">
+<meta name="referrer" content="no-referrer"><link rel="icon" href="./book.svg" type="image/svg+xml"><link rel="stylesheet" href="./style.css">
+<script type="module" src="./app.js"></script></head><body>
+<a href="#content" class="skip">跳至主要內容</a>
+<header><div class="shell header"><a class="brand" href="#dashboard"><img src="./book.svg" alt="" width="34" height="34">北科大圖書館座位預約</a>
+<nav aria-label="主要導覽"><a href="#dashboard">座位總覽</a><a href="#calendar">日期與時段</a><a href="#seatmap">座位圖</a><a href="#bookings">我的預約<span id="count"></span></a></nav>
+<div class="actions"><button data-do="guide">使用說明</button><button data-do="account" id="account">登入／註冊</button></div></div></header>
+<main class="shell" id="content" tabindex="-1"><noscript>請開啟 JavaScript 以查詢及預約座位。</noscript><div id="connection" role="status"></div><div id="view"></div></main>
+<footer><div class="shell foot"><span>北科大圖書館座位預約 · 課程設計作品</span><button data-do="guide">操作指南</button></div></footer>
+<dialog id="dialog" aria-labelledby="dialog-title"><div class="dialog-top"><h2 id="dialog-title"></h2><button data-do="close" aria-label="關閉">×</button></div><div id="dialog-body"></div><p id="dialog-error" role="alert"></p></dialog>
+<div id="toast" role="status" aria-live="polite"></div></body></html>
